@@ -16,18 +16,18 @@ db_connect <- function(uid = Sys.getenv("UID"),
   if (drv == "FreeTDS") {
     if (DBI::dbCanConnect(odbc::odbc(),
                           Driver = drv,
-                          Database = "MTS_Planning_Data",
+                          Database = "test",
                           Uid = uid,
                           Pwd = pwd,
-                          Server = "dbsqlcl11t.test.local,65414"
+                          Server = "test"
     ) == FALSE) {
       cli::cli_abort("Database failed to connect")
     }
   } else if (drv == "SQL Server") {
     if (DBI::dbCanConnect(odbc::odbc(),
                           Driver = drv,
-                          Database = "MTS_Planning_Data",
-                          Server = "dbsqlcl11t.test.local,65414",
+                          Database = "test",
+                          Server = "test",
                           Trusted_Connection = "yes"
     ) ==
     FALSE) {
@@ -44,16 +44,16 @@ db_connect <- function(uid = Sys.getenv("UID"),
   conn <- if (drv == "FreeTDS") {
     DBI::dbConnect(odbc::odbc(),
                    Driver = drv,
-                   Database = "MTS_Planning_Data",
+                   Database = "test",
                    Uid = uid,
                    Pwd = pwd,
-                   Server = "dbsqlcl11t.test.local,65414"
+                   Server = "test"
     )
   } else if (drv == "SQL Server") {
     DBI::dbConnect(odbc::odbc(),
                    Driver = drv,
-                   Database = "MTS_Planning_Data",
-                   Server = "dbsqlcl11t.test.local,65414",
+                   Database = "test",
+                   Server = "test",
                    Trusted_Connection = "yes"
     )
   }
