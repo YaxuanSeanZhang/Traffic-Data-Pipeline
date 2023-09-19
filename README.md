@@ -1,4 +1,4 @@
-# LoopDetectorData
+# Traffic-Data-Pipeline
 
 ## Overview
 LoopDetectorData is a comprehensive pipeline designed for retrieving data from the Minnesota Department of Transportation (MnDOT) loop detectors, which are installed across the Minnesota Freeway system. The pipeline operates on a nightly basis, facilitating the aggregation, modeling, and exploration of traffic volume. It enables the study of traffic trends throughout the Twin Cities freeway system, both before and after the COVID-19 pandemic. The resulting data is meticulously prepared to be seamlessly integrated into the [Rshiny app](https://metrotransitmn.shinyapps.io/freeway-traffic-trends/).
@@ -36,4 +36,4 @@ The future work of this pipeline can be done by:
 * Three-day Data Pulling Delay: Acknowledge that there exists a three-day interval between the extraction of configuration data and sensor data. 
 * Automated Identification of Missing Data Days:  In cases where data updates are delayed on the MnDOT server, future versions of the pipeline could automatically identify these gaps in data. The pipeline would then smartly fetch and include the missing data for those days.
   
-Please keep these issues in mind when using the LoopDetectorData repo.
+Please keep these issues in mind when using the Traffic-Data-Pipeline repo.
