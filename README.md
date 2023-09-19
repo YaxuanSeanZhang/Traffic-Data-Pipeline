@@ -1,7 +1,7 @@
 # Traffic-Data-Pipeline
 
 ## Overview
-LoopDetectorData is a comprehensive pipeline designed for retrieving data from the Minnesota Department of Transportation (MnDOT) loop detectors, which are installed across the Minnesota Freeway system. The pipeline operates on a nightly basis, facilitating the aggregation, modeling, and exploration of traffic volume. It enables the study of traffic trends throughout the Twin Cities freeway system, both before and after the COVID-19 pandemic. The resulting data is meticulously prepared to be seamlessly integrated into the [Rshiny app](https://metrotransitmn.shinyapps.io/freeway-traffic-trends/).
+Traffic-Data-Pipeline is a comprehensive pipeline designed for retrieving data from the Minnesota Department of Transportation (MnDOT) loop detectors, which are installed across the Minnesota Freeway system. The pipeline operates on a nightly basis, facilitating the aggregation, modeling, and exploration of traffic volume. It enables the study of traffic trends throughout the Twin Cities freeway system, both before and after the COVID-19 pandemic. The resulting data is meticulously prepared to be seamlessly integrated into the [Rshiny app](https://metrotransitmn.shinyapps.io/freeway-traffic-trends/).
 
 ## Files
 This repository consists of the following essential files:
